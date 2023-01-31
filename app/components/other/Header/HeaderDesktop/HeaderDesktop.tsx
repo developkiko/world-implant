@@ -35,11 +35,11 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
       </div>
       <div className={styles.actions}>
         <Button
-          onClick={() => (document.location.href = "tel:89857751262")}
+          onClick={() => (document.location.href = "tel:+380683656767")}
           className={styles.phone}
           primary
         >
-          +7 (985) 775-12-62
+          +38 (068) 365-67-67
         </Button>
         <Button
           onClick={() => setIsModalShow((prev) => !prev)}

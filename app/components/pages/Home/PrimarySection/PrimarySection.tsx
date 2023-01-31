@@ -28,17 +28,16 @@ const PrimarySection: FC = () => {
       className={styles.section}
     >
       <article className={styles.majorArticle}>
-        <h1>Научитесь водить уже через 3 месяца</h1>
+        <h1>Имплантационная система №1 в Мире</h1>
         <p>
-          Научитесь водить уже через 3 месяца. Предостовляем высококачественные
-          уроки вождения с 2000 года и выпускаем более 450 студентов в месяц.
+          Инновационные решения, современный подход и новые перспективы в имплантологии.
         </p>
         <Link href="/#form" scroll={false}>
           <Button primary>
             Записаться <Arrow />
           </Button>
         </Link>
-        <Image src={car} alt="Картинка машины" />
+        <Image src={car} alt="Dental implant" />
       </article>
       <div className={styles.items}>
         <article>

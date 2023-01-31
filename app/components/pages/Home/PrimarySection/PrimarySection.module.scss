@@ -17,8 +17,8 @@
     }
 
     img {
-      @apply absolute -top-10 -right-80 z-10;
-
+      @apply absolute z-10;
+      right:-1rem;top:1rem;
       @media (max-width: $adaptive-max-breakpoint) {
         @apply hidden;
       }
