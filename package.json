@@ -1,5 +1,5 @@
 {
-  "name": "driving-school-frontend",
+  "name": "world-implant",
   "version": "0.5.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "next lint",
-    "prettier": "prettier --write ./app"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.42.1",
     "sass": "^1.57.1",
+    "serve": "^14.2.0",
     "swiper": "^8.4.5",
     "yup": "^0.32.11"
   },
