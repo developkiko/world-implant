@@ -49,10 +49,10 @@ const ContactsSection: FC = () => {
               <Phone /> <h6>Позвони сейчас</h6>
             </span>
             <span>
-              <a href="tel:89857751262">+7 (985) 775-12-62</a>
+              <a href="tel:+380683656767">+38 (068) 365-67-67</a>
             </span>
             <span>
-              <a href="tel:89857755216">+7 (985) 775-52-16</a>
+              <a href="tel:+380679241202">+38 (067) 924-12-02</a>
             </span>
           </li>
           <li>
@@ -60,10 +60,10 @@ const ContactsSection: FC = () => {
               <Mail /> <h6>Email</h6>
             </span>
             <span>
-              <a href="mailto:support@autoschool.org">support@autoschool.org</a>
+              <a href="mailto:support@world-implant.com">support@world-implant.com</a>
             </span>
             <span>
-              <a href="mailto:info@autoschool.org">info@autoschool.org</a>
+              <a href="mailto:info@world-implant.com">info@world-implant.com</a>
             </span>
           </li>
           <li>

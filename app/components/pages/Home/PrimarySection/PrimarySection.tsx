@@ -41,24 +41,24 @@ const PrimarySection: FC = () => {
       </article>
       <div className={styles.items}>
         <article>
-          <Image src={chart} alt="График" />
-          <h4>График</h4>
-          <p>Подстраивающийся под вас</p>
+          <Image src={chart} alt="Устойчивость" />
+          <h4>Устойчивость</h4>
+          <p>Надежная поддержка для Вашей зубной коронки</p>
         </article>
         <article>
-          <Image src={fleet} alt="Автопарк" />
-          <h4>Автопарк</h4>
-          <p>Ежегодно обновляется</p>
+          <Image src={fleet} alt="Естественность" />
+          <h4>Естественность</h4>
+          <p>Словно Ваши зубы всегда были на месте</p>
         </article>
         <article>
-          <Image src={instructor} alt="Инструктора" />
-          <h4>Инструктора</h4>
-          <p>С опытом не менее 5 лет</p>
+          <Image src={instructor} alt="Комфорт" />
+          <h4>Комфорт</h4>
+          <p>Высокий уровень комфорта во время еды и речи</p>
         </article>
         <article>
-          <Image src={discount} alt="Рассрочка и скидки" />
-          <h4>Рассрочка и скидки</h4>
-          <p>На 12 м. и скидки студентам</p>
+          <Image src={discount} alt="Долговечность" />
+          <h4>Долговечность</h4>
+          <p>Долговечный природный вид и функциональность</p>
         </article>
       </div>
       <Swiper
