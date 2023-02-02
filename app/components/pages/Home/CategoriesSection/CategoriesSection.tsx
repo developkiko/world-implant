@@ -27,14 +27,14 @@ const CategoriesSection: FC = () => {
       className={styles.section}
       id="categories"
     >
-      <Heading>Выберите категорию</Heading>
+      <Heading>Наша продукция</Heading>
       <div className={styles.categories}>
         <article>
           <h3>
-            Категория <span>B</span>
+            Имплантационная система <span>HELIX</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarB} alt="Машина категории B" />
+            <Image src={categoryCarB} alt="Имплантационная система HELIX" />
           </div>
           <ul>
             <li>
@@ -59,10 +59,10 @@ const CategoriesSection: FC = () => {
         </article>
         <article>
           <h3>
-            Категория <span>C</span>
+            Имплантационная система <span>ASPER</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarC} alt="Машина категории C" />
+            <Image src={categoryCarC} alt="Имплантационная система ASPER" />
           </div>
           <ul>
             <li>
@@ -87,10 +87,10 @@ const CategoriesSection: FC = () => {
         </article>
         <article>
           <h3>
-            Категория <span>CE</span>
+            Хирургический набор <span>ТМ Bauer`s</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarCE} alt="Машина категории CE" />
+            <Image src={categoryCarCE} alt="Хирургический набор ТМ Bauer`s" />
           </div>
           <ul>
             <li>
@@ -115,10 +115,10 @@ const CategoriesSection: FC = () => {
         </article>
         <article>
           <h3>
-            Категория <span>D</span>
+            Витаминный комплекс <span>ТМ Bauer`s</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarD} alt="Машина категории D" />
+            <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s" />
           </div>
           <ul>
             <li>
@@ -155,10 +155,10 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>B</span>
+              Имплантационная система <span>HELIX</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarB} alt="Машина категории B" />
+              <Image src={categoryCarB} alt="Имплантационная система HELIX" />
             </div>
             <ul>
               <li>
@@ -185,10 +185,10 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>C</span>
+              Имплантационная система <span>ASPER</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarC} alt="Машина категории C" />
+              <Image src={categoryCarC} alt="Имплантационная система ASPER" />
             </div>
             <ul>
               <li>
@@ -215,10 +215,10 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>CE</span>
+              Хирургический набор <span>ТМ Bauer`s</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarCE} alt="Машина категории CE" />
+              <Image src={categoryCarCE} alt="Хирургический набор ТМ Bauer`s" />
             </div>
             <ul>
               <li>
@@ -245,10 +245,10 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>D</span>
+              Витаминный комплекс <span>ТМ Bauer`s</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarD} alt="Машина категории D" />
+              <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s" />
             </div>
             <ul>
               <li>
