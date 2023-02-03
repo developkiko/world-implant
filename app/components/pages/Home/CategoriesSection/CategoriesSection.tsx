@@ -39,18 +39,13 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>23 400 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>от 7 000 грн/шт</span>
+              <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 2 месяца</span>
-            </li>
-            <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 1.5 месяца</span>
+              <Image src={theory} alt="Иконка гарантии" />
+              <span className={styles.heading}>Гарантия</span>
+              <span>- 3 года</span>
             </li>
           </ul>
           <Button primary>
@@ -67,18 +62,13 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>33 500 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>от 7 500 грн/шт</span>
+              <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
-            </li>
-            <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2 месяца</span>
+              <Image src={theory} alt="Иконка гарантии" />
+              <span className={styles.heading}>Гарантия</span>
+              <span>- 3 года</span>
             </li>
           </ul>
           <Button primary>
@@ -95,18 +85,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>45 000 ₽</span>
-              <span>с учётом топлива</span>
-            </li>
-            <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
-            </li>
-            <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2.5 месяца</span>
+              <span className={styles.heading}>4 500 грн</span>
             </li>
           </ul>
           <Button primary>
@@ -123,18 +102,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>26 000 ₽</span>
-              <span>с учётом топлива</span>
-            </li>
-            <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
-            </li>
-            <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2.5 месяца</span>
+              <span className={styles.heading}>2 000 грн</span>
             </li>
           </ul>
           <Button primary>
@@ -163,18 +131,13 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>23 400 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>от 7 000 грн/шт</span>
+                <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 2 месяца</span>
-              </li>
-              <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 1.5 месяца</span>
+                <Image src={theory} alt="Иконка гарантии" />
+                <span className={styles.heading}>Гарантия</span>
+                <span>- 3 года</span>
               </li>
             </ul>
             <Button primary>
@@ -193,18 +156,13 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>33 500 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>от 7 500 грн/шт</span>
+                <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
-              </li>
-              <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2 месяца</span>
+                <Image src={theory} alt="Иконка гарантии" />
+                <span className={styles.heading}>Гарантия</span>
+                <span>- 3 года</span>
               </li>
             </ul>
             <Button primary>
@@ -223,18 +181,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>45 000 ₽</span>
-                <span>с учётом топлива</span>
-              </li>
-              <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
-              </li>
-              <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2.5 месяца</span>
+                <span className={styles.heading}>4 500 грн</span>
               </li>
             </ul>
             <Button primary>
@@ -253,18 +200,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>26 000 ₽</span>
-                <span>с учётом топлива</span>
-              </li>
-              <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
-              </li>
-              <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2.5 месяца</span>
+                <span className={styles.heading}>2 000 грн</span>
               </li>
             </ul>
             <Button primary>

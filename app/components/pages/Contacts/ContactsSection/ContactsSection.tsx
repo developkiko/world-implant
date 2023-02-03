@@ -72,12 +72,12 @@ const ContactsSection: FC = () => {
             </span>
             <span>
               <a
-                href="https://yandex.ru/maps/-/CCUvbUTgPD"
+                href="https://goo.gl/maps/GVGZFpp3x5Z9UBXR7"
                 rel="noreferrer"
                 target="_blank"
               >
-                754071, Московская область, город Сергиев Посад, улица 40 лет
-                Октября, 5А
+                ул. Князя Ярослава Мудрого (Ленинградская), 68, Днепр, Днепропетровская область, 49000
+                ТДВ "КОНЦЕРН "ВЕСНА", 3 этаж, офис 317
               </a>
             </span>
           </li>

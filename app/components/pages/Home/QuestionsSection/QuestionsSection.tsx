@@ -28,7 +28,7 @@ const QuestionsSection: FC = () => {
       viewport={{ once: true }}
       className={styles.section}
     >
-      <Heading>Ответы на вопросы</Heading>
+      <Heading>Ответы на частые вопросы</Heading>
       <div className={styles.questions}>
         {questions.map((question) => (
           <article key={question.id}>

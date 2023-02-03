@@ -16,7 +16,7 @@ const FormSection: FC = () => {
       className={styles.section}
       id="form"
     >
-      <Heading>Подробная заявка на обучение</Heading>
+      <Heading>Заявка для консультации по покупке и установке зубных имплантов</Heading>
       <form className={styles.form}>
         <div className={styles.inputs}>
           <Input
@@ -31,6 +31,8 @@ const FormSection: FC = () => {
             title="Возраст"
             type="number"
             placeholder="Введите кол-во полных лет"
+            min="18"
+            max="100"
             name="age"
             dark
           />
@@ -38,7 +40,8 @@ const FormSection: FC = () => {
             required
             title="Номер телефона"
             type="tel"
-            placeholder="Введите номер вашего телефона"
+            pattern="(\+?\d{2})?\d{10}"
+            placeholder="Минимум 10 цифр, можно без +380"
             dark
             name="tel"
           />
@@ -47,66 +50,67 @@ const FormSection: FC = () => {
             title="Электронная почта"
             type="email"
             placeholder="Введите вашу эл. почту"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             dark
             name="email"
           />
         </div>
         <div className={styles.buttons}>
           <div>
-            <h5>Желаемые категории</h5>
+            <h5>Суть вашего вопроса</h5>
             <div className={styles.category}>
               <Radio
                 required
-                title="B (легковой автомобиль)"
+                title="Консультация"
                 name="category"
-                defaultValue="B"
+                defaultValue="Consult"
                 dark
               />
               <Radio
                 required
-                title="C (грузовой автомобиль)"
+                title="Покупка имплантов"
                 name="category"
-                defaultValue="C"
+                defaultValue="Buy implants"
                 dark
               />
               <Radio
                 required
-                title="CE (грузовой автомобиль с прицепом)"
+                title="Покупка и установка имплантов"
                 name="category"
-                defaultValue="CE"
+                defaultValue="Buy and install implants"
                 dark
               />
               <Radio
                 required
-                title="D (автобус)"
+                title="Только установка имплантов"
                 name="category"
-                defaultValue="D"
+                defaultValue="Install implants only"
                 dark
               />
             </div>
           </div>
           <div>
-            <h5>Предпочитаемая группа</h5>
+            <h5>Когда Вам позвонить?</h5>
             <div className={styles.group}>
               <Radio
                 required
-                title="Утренняя"
+                title="до 12 дня"
                 name="group"
-                defaultValue="morning"
+                defaultValue="before 12"
                 dark
               />
               <Radio
                 required
-                title="Дневная"
+                title="после 12 дня"
                 name="group"
-                defaultValue="day"
+                defaultValue="after 12"
                 dark
               />
               <Radio
                 required
-                title="Вечерняя"
+                title="когда угодно"
                 name="group"
-                defaultValue="evening"
+                defaultValue="any"
                 dark
               />
             </div>
