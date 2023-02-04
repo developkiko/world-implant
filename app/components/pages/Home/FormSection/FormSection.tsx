@@ -46,10 +46,9 @@ const FormSection: FC = () => {
             name="tel"
           />
           <Input
-            required
-            title="Электронная почта"
+            title="E-mail"
             type="email"
-            placeholder="Введите вашу эл. почту"
+            placeholder="Не обязательно"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             dark
             name="email"

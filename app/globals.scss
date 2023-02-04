@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  user-select: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +15,7 @@ html {
 body {
   @apply font-montserrat text-black;
   background-color: #f9f9f9;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -57,4 +62,8 @@ input:-webkit-autofill {
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #2f8fff;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #187abb;
 }

@@ -1,0 +1,48 @@
+.MessBut {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  text-transform: none;
+  font-size: 100%;
+  a {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100%;
+    transition: .3s linear;
+    &:nth-child(1) {
+      border-radius: 4px 0 0 4px;
+    }
+    &:nth-child(3) {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  .viber {
+    background-color: #7360f2;
+    background-image: url("viber.png");
+    &:hover {
+      box-shadow: 0 0 25px 0 #7360f2;
+    }
+  }
+  .telegram {
+    background-color: #0088CC;
+    background-image: url("telegram.png");
+    &:hover {
+      box-shadow: 0 0 25px 0 #0088CC;
+    }
+  }
+  .whatsapp {
+    background-color: #5FFC7B;
+    background-image: url("whatsapp.png");
+    &:hover {
+      box-shadow: 0 0 25px 0 #5FFC7B;
+    }
+  }
+}

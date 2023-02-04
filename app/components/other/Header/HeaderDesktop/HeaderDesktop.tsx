@@ -1,7 +1,7 @@
 import React, { FC } from "react";
+import MessBut from "@/components/other/Header/MessBut/MessBut";
 
 import styles from "./HeaderDesktop.module.scss";
-
 import Logo from "@/components/ui/Logo/Logo";
 import Link from "next/link";
 import Button from "@/components/ui/Button/Button";
@@ -10,7 +10,7 @@ interface Props {
   setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
+const HeaderDesktop: FC<Props> = () => {
   return (
     <header className={styles.desktop}>
       <div className={styles.about}>
@@ -24,7 +24,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
             </li>
             <li>
               <Link href="/#form" scroll={false}>
-                Заявка на обучение
+                Задать вопрос
               </Link>
             </li>
             <li>
@@ -41,13 +41,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
         >
           +38 (068) 365-67-67
         </Button>
-        <Button
-          onClick={() => setIsModalShow((prev) => !prev)}
-          className={styles.authorize}
-          secondary
-        >
-          Авторизация
-        </Button>
+        <MessBut/>
       </div>
     </header>
   );

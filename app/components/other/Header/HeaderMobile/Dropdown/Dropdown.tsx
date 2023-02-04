@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
+import MessBut from "@/components/other/Header/MessBut/MessBut";
 
 import styles from "./Dropdown.module.scss";
 import Button from "@/components/ui/Button/Button";
@@ -68,7 +69,7 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
                 onClick={() => setIsDropdown(false)}
                 scroll={false}
               >
-                Заявка на обучение
+                Задать вопрос
               </Link>
             </li>
             <li>
@@ -84,13 +85,7 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
           >
             +38 (068) 365-67-67
           </Button>
-          <Button
-            onClick={() => setIsModalShow(true)}
-            className={styles.authorize}
-            secondary
-          >
-            Авторизация
-          </Button>
+          <MessBut/>
         </div>
       </div>
     </div>,

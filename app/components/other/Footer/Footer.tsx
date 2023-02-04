@@ -17,7 +17,7 @@ const Footer: FC = () => {
           </li>
           <li>
             <Link href="/#form" scroll={false}>
-              Заявка на обучение
+              Задать вопрос
             </Link>
           </li>
           <li>

@@ -32,7 +32,7 @@ const PrimarySection: FC = () => {
         <p>
           Инновационные решения, современный подход и новые перспективы в имплантологии.
         </p>
-        <Link href="/#form" scroll={false}>
+        <Link href="/#form" scroll={true}>
           <Button primary>
             Записаться <Arrow />
           </Button>

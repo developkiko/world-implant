@@ -47,9 +47,14 @@ const CategoriesSection: FC = () => {
               <span className={styles.heading}>Гарантия</span>
               <span>- 3 года</span>
             </li>
+            <li>
+              <Image src={practice} alt="Иконка качества" />
+              <span className={styles.heading}>Немецкое</span>
+              <span> качество</span>
+            </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Смотреть каталог <Arrow />
           </Button>
         </article>
         <article>
@@ -70,26 +75,42 @@ const CategoriesSection: FC = () => {
               <span className={styles.heading}>Гарантия</span>
               <span>- 3 года</span>
             </li>
+            <li>
+              <Image src={practice} alt="Иконка качества" />
+              <span className={styles.heading}>Корейское</span>
+              <span> качество</span>
+            </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Смотреть каталог <Arrow />
           </Button>
         </article>
         <article>
           <h3>
-            Хирургический набор <span>ТМ Bauer`s</span>
+            Имплантационная система <span>UNIDENT</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarCE} alt="Хирургический набор ТМ Bauer`s" />
+            <Image src={categoryCarCE} alt="Имплантационная система UNIDENT" />
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>4 500 грн</span>
+              <span className={styles.heading}>от 6 500 грн</span>
+              <span>с учётом установки</span>
+            </li>
+            <li>
+              <Image src={theory} alt="Иконка гарантии" />
+              <span className={styles.heading}>Гарантия</span>
+              <span>- 3 года</span>
+            </li>
+            <li>
+              <Image src={practice} alt="Иконка качества" />
+              <span className={styles.heading}>Швейцарское</span>
+              <span> качество</span>
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Смотреть каталог <Arrow />
           </Button>
         </article>
         <article>
@@ -106,7 +127,7 @@ const CategoriesSection: FC = () => {
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Смотреть каталог <Arrow />
           </Button>
         </article>
       </div>
@@ -139,9 +160,14 @@ const CategoriesSection: FC = () => {
                 <span className={styles.heading}>Гарантия</span>
                 <span>- 3 года</span>
               </li>
+              <li>
+                <Image src={practice} alt="Иконка качества" />
+                <span className={styles.heading}>Немецкое</span>
+                <span> качество</span>
+              </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Смотреть каталог <Arrow />
             </Button>
           </article>
         </SwiperSlide>
@@ -164,28 +190,44 @@ const CategoriesSection: FC = () => {
                 <span className={styles.heading}>Гарантия</span>
                 <span>- 3 года</span>
               </li>
+              <li>
+                <Image src={practice} alt="Иконка качества" />
+                <span className={styles.heading}>Корейское</span>
+                <span> качество</span>
+              </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Смотреть каталог <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Хирургический набор <span>ТМ Bauer`s</span>
+              Имплантационная система <span>UNIDENT</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarCE} alt="Хирургический набор ТМ Bauer`s" />
+              <Image src={categoryCarCE} alt="Имплантационная система UNIDENT" />
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>4 500 грн</span>
+                <span className={styles.heading}>от 6 500 грн</span>
+                <span>с учётом установки</span>
+              </li>
+              <li>
+                <Image src={theory} alt="Иконка гарантии" />
+                <span className={styles.heading}>Гарантия</span>
+                <span>- 3 года</span>
+              </li>
+              <li>
+                <Image src={practice} alt="Иконка качества" />
+                <span className={styles.heading}>Швейцарское</span>
+                <span> качество</span>
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Смотреть каталог <Arrow />
             </Button>
           </article>
         </SwiperSlide>
@@ -204,7 +246,7 @@ const CategoriesSection: FC = () => {
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Смотреть каталог <Arrow />
             </Button>
           </article>
         </SwiperSlide>
