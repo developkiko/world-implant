@@ -8,7 +8,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   type?: HTMLInputTypeAttribute;
   dark?: boolean;
   name: string;
-  value: string;
+  value?: string;
   required?: boolean;
   event?: ChangeEventHandler;
 }
