@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState, FormEvent, ChangeEvent } from "react";
 import { motion } from "framer-motion";
 
 import styles from "./FormSection.module.scss";
@@ -7,7 +7,52 @@ import Input from "@/components/ui/Input/Input";
 import Radio from "@/components/ui/Radio/Radio";
 import LongArrow from "@/components/other/Icons/LongArrow";
 
+const https = require("https");
+const TOKEN = "5438803182:AAH1x-P2VW0Z9HTFoIrhqzf_lGms51ZzQtQ";
+const CHAT_ID = -1001394974009;
+
 const FormSection: FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    age: '',
+    tel: '',
+    email: '',
+    category: '',
+    group: ''
+  });
+
+  const sendFormDataToTelegram = async (data: string) => {
+    const response = await fetch(
+      `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(data)}`
+    );
+    if (!response.ok) {
+      console.error("Error sending data to Telegram");
+    } else {
+      console.log("ok!");
+    }
+  };
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(formData);
+    const clearData = JSON.stringify(formData);
+    console.log(clearData);
+    let data: any;
+    try {
+      data = JSON.parse(clearData);
+    } catch (error) {
+      console.error(error);
+    }
+
+    const { name, age, tel, email, category, group } = data;
+    const message = `Здравствуйте меня зовут ${name}, мне ${age} года. Я хотел бы провести ${category}, вот мои контакты: Телефон: ${tel} e-mail: ${email}, звоните ${group}`;
+    sendFormDataToTelegram(message);
+  };
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
   return (
     <motion.section
       initial={{ translateX: "-200px", opacity: 0 }}
@@ -17,7 +62,7 @@ const FormSection: FC = () => {
       id="form"
     >
       <Heading>Заявка для консультации по покупке и установке зубных имплантов</Heading>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputs}>
           <Input
             required
@@ -25,6 +70,8 @@ const FormSection: FC = () => {
             placeholder="Введите ваше имя"
             dark
             name="name"
+            value={formData.name}
+            event={handleInputChange}
           />
           <Input
             required
@@ -34,7 +81,9 @@ const FormSection: FC = () => {
             min="18"
             max="100"
             name="age"
+            value={formData.age}
             dark
+            event={handleInputChange}
           />
           <Input
             required
@@ -44,6 +93,8 @@ const FormSection: FC = () => {
             placeholder="Минимум 10 цифр, можно без +380"
             dark
             name="tel"
+            value={formData.tel}
+            event={handleInputChange}
           />
           <Input
             title="E-mail"
@@ -52,6 +103,8 @@ const FormSection: FC = () => {
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             dark
             name="email"
+            value={formData.email}
+            event={handleInputChange}
           />
         </div>
         <div className={styles.buttons}>
@@ -62,29 +115,37 @@ const FormSection: FC = () => {
                 required
                 title="Консультация"
                 name="category"
-                defaultValue="Consult"
+                defaultValue="Консультация"
                 dark
+                checked={formData.category === "Консультация"}
+                event={handleInputChange}
               />
               <Radio
                 required
                 title="Покупка имплантов"
                 name="category"
-                defaultValue="Buy implants"
+                defaultValue="Покупка имплантов"
                 dark
+                checked={formData.category === "Покупка имплантов"}
+                event={handleInputChange}
               />
               <Radio
                 required
                 title="Покупка и установка имплантов"
                 name="category"
-                defaultValue="Buy and install implants"
+                defaultValue="Покупка и установка имплантов"
                 dark
+                checked={formData.category === "Покупка и установка имплантов"}
+                event={handleInputChange}
               />
               <Radio
                 required
                 title="Только установка имплантов"
                 name="category"
-                defaultValue="Install implants only"
+                defaultValue="Только установка имплантов"
                 dark
+                checked={formData.category === "Только установка имплантов"}
+                event={handleInputChange}
               />
             </div>
           </div>
@@ -95,22 +156,28 @@ const FormSection: FC = () => {
                 required
                 title="до 12 дня"
                 name="group"
-                defaultValue="before 12"
+                defaultValue="до 12 дня"
                 dark
+                checked={formData.group === "до 12 дня"}
+                event={handleInputChange}
               />
               <Radio
                 required
                 title="после 12 дня"
                 name="group"
-                defaultValue="after 12"
+                defaultValue="после 12 дня"
                 dark
+                checked={formData.group === "после 12 дня"}
+                event={handleInputChange}
               />
               <Radio
                 required
-                title="когда угодно"
+                title="в любое время"
                 name="group"
-                defaultValue="any"
+                defaultValue="в любое время"
                 dark
+                checked={formData.group === "в любое время"}
+                event={handleInputChange}
               />
             </div>
           </div>

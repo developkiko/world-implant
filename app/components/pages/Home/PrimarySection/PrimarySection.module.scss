@@ -3,6 +3,8 @@
 .section {
   .majorArticle {
     @apply relative bg-white shadow-md rounded-lg px-10 py-20 overflow-hidden;
+    background: url("main-bg.png") center right no-repeat;
+    background-size: cover;
 
     h1 {
       @apply text-6xl font-black uppercase w-3/4;

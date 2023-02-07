@@ -1,4 +1,4 @@
-import React, { FC, InputHTMLAttributes } from "react";
+import React, {ChangeEventHandler, FC, InputHTMLAttributes} from "react";
 
 import styles from "./Radio.module.scss";
 import classNames from "classnames";
@@ -8,6 +8,8 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   dark?: boolean;
   required?: boolean;
+  check?: boolean;
+  event?: ChangeEventHandler;
 }
 
 const Radio: FC<Props> = ({
@@ -15,6 +17,8 @@ const Radio: FC<Props> = ({
   name,
   dark = false,
   required = false,
+  check,
+  event,
   ...props
 }) => {
   return (
@@ -24,7 +28,7 @@ const Radio: FC<Props> = ({
         [styles.dark]: dark
       })}
     >
-      <input type="radio" required={required} {...props} name={name} />
+      <input type="radio" required={required} {...props} name={name} onChange={event} checked={check}/>
       <h6>{title}</h6>
     </label>
   );
