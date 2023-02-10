@@ -8,15 +8,16 @@
   .info {
     @apply bg-white shadow-md rounded-xl p-8;
   }
-
   .form {
     @apply flex flex-col justify-between gap-6;
+
     .heading {
       @apply text-3xl font-black mb-2;
     }
 
     > form {
       @apply flex flex-col gap-8;
+
       > div {
         @apply grid gap-6;
         grid-template-columns: 1fr 1fr;

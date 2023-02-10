@@ -1,15 +1,13 @@
 import React, { FC, useState, FormEvent, ChangeEvent } from "react";
 import { motion } from "framer-motion";
+import FormHandler from "@/components/other/FormHandler/FormHandler";
 
 import styles from "./FormSection.module.scss";
+import forms from "@/components/other/FormHandler/Form.module.scss";
 import Heading from "@/components/ui/Heading/Heading";
 import Input from "@/components/ui/Input/Input";
 import Radio from "@/components/ui/Radio/Radio";
 import LongArrow from "@/components/other/Icons/LongArrow";
-
-const https = require("https");
-const TOKEN = "5438803182:AAH1x-P2VW0Z9HTFoIrhqzf_lGms51ZzQtQ";
-const CHAT_ID = -1001394974009;
 
 const FormSection: FC = () => {
   const [formData, setFormData] = useState({
@@ -20,19 +18,9 @@ const FormSection: FC = () => {
     category: '',
     group: ''
   });
+  const [isShowing, setShowing] = useState(false);
 
-  const sendFormDataToTelegram = async (data: string) => {
-    const response = await fetch(
-      `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(data)}`
-    );
-    if (!response.ok) {
-      console.error("Error sending data to Telegram");
-    } else {
-      console.log("ok!");
-    }
-  };
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(formData);
     const clearData = JSON.stringify(formData);
@@ -46,7 +34,11 @@ const FormSection: FC = () => {
 
     const { name, age, tel, email, category, group } = data;
     const message = `Здравствуйте меня зовут ${name}, мне ${age} года. Я хотел бы провести ${category}, вот мои контакты: Телефон: ${tel} e-mail: ${email}, звоните ${group}`;
-    sendFormDataToTelegram(message);
+    const status = await FormHandler(message);
+    console.log(status ? "все ок!" : "беда!");
+    setShowing(status);
+    let form = document.getElementsByTagName("form").item(0);
+    if (form && status) form.style.display = "none";
   };
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -62,6 +54,9 @@ const FormSection: FC = () => {
       id="form"
     >
       <Heading>Заявка для консультации по покупке и установке зубных имплантов</Heading>
+      <div className={forms.modal}>
+        {isShowing ? <div>Ваше заявка успешно отправлена! Ожидайте, наш менеджер свяжеться с вами в ближайшее время.</div> : <span>Возникла проблема при отправке формы, возможно Вам стоит попробовать еще раз позже!</span>}
+      </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputs}>
           <Input
