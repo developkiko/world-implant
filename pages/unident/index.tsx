@@ -1,18 +1,18 @@
 import React from "react";
 import { NextPage } from "next";
 import Layout from "@/components/other/Layout/Layout";
-import Asper from "@/components/pages/Asper/Asper";
+import Unident from "@/components/pages/Unident/Unident";
 import Head from "next/head";
 
-const AsperPage: NextPage = () => {
+const UnidentPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>World-Implant - импланты Asper</title>
+        <title>World-Implant - импланты Unident</title>
       </Head>
-      <Asper />
+      <Unident />
     </Layout>
   );
 };
 
-export default AsperPage;
+export default UnidentPage;

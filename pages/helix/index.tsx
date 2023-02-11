@@ -1,18 +1,18 @@
 import React from "react";
 import { NextPage } from "next";
 import Layout from "@/components/other/Layout/Layout";
-import Asper from "@/components/pages/Asper/Asper";
+import Helix from "@/components/pages/Helix/Helix";
 import Head from "next/head";
 
-const AsperPage: NextPage = () => {
+const HelixPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>World-Implant - импланты Asper</title>
+        <title>World-Implant - импланты Helix</title>
       </Head>
-      <Asper />
+      <Helix />
     </Layout>
   );
 };
 
-export default AsperPage;
+export default HelixPage;

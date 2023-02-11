@@ -1,18 +1,18 @@
 import React from "react";
 import { NextPage } from "next";
 import Layout from "@/components/other/Layout/Layout";
-import Asper from "@/components/pages/Asper/Asper";
+import Bauers from "@/components/pages/Bauers/Bauers";
 import Head from "next/head";
 
-const AsperPage: NextPage = () => {
+const BauersPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>World-Implant - импланты Asper</title>
+        <title>World-Implant - импланты Bauers</title>
       </Head>
-      <Asper />
+      <Bauers />
     </Layout>
   );
 };
 
-export default AsperPage;
+export default BauersPage;
