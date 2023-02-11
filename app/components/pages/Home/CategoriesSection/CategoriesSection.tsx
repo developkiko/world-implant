@@ -1,12 +1,13 @@
-import React, { FC } from "react";
-
-import styles from "./CategoriesSection.module.scss";
+import React, {FC} from "react";
+import Link from "next/link";
 import Image from "next/image";
+
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay} from "swiper";
+import {motion} from "framer-motion";
+import styles from "./CategoriesSection.module.scss";
 import Button from "@/components/ui/Button/Button";
 import Arrow from "@/components/other/Icons/Arrow";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
-import { motion } from "framer-motion";
 import Heading from "@/components/ui/Heading/Heading";
 
 import categoryCarB from "/public/images/category_car_b.jpg";
@@ -21,9 +22,9 @@ import practice from "/public/images/practice.png";
 const CategoriesSection: FC = () => {
   return (
     <motion.section
-      initial={{ translateX: "200px", opacity: 0 }}
-      whileInView={{ translateX: "0px", opacity: 1 }}
-      viewport={{ once: true }}
+      initial={{translateX: "200px", opacity: 0}}
+      whileInView={{translateX: "0px", opacity: 1}}
+      viewport={{once: true}}
       className={styles.section}
       id="categories"
     >
@@ -34,101 +35,109 @@ const CategoriesSection: FC = () => {
             Имплантационная система <span>HELIX</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarB} alt="Имплантационная система HELIX" />
+            <Image src={categoryCarB} alt="Имплантационная система HELIX"/>
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="Иконка цены"/>
               <span className={styles.heading}>от 7 000 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка гарантии" />
+              <Image src={theory} alt="Иконка гарантии"/>
               <span className={styles.heading}>Гарантия</span>
               <span>- 3 года</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка качества" />
+              <Image src={practice} alt="Иконка качества"/>
               <span className={styles.heading}>Немецкое</span>
               <span> качество</span>
             </li>
           </ul>
-          <Button primary>
-            Смотреть каталог <Arrow />
-          </Button>
+          <Link href="/helix">
+            <Button primary>
+              Смотреть каталог <Arrow/>
+            </Button>
+          </Link>
         </article>
         <article>
           <h3>
             Имплантационная система <span>ASPER</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarC} alt="Имплантационная система ASPER" />
+            <Image src={categoryCarC} alt="Имплантационная система ASPER"/>
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="Иконка цены"/>
               <span className={styles.heading}>от 7 500 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка гарантии" />
+              <Image src={theory} alt="Иконка гарантии"/>
               <span className={styles.heading}>Гарантия</span>
               <span>- 3 года</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка качества" />
+              <Image src={practice} alt="Иконка качества"/>
               <span className={styles.heading}>Корейское</span>
               <span> качество</span>
             </li>
           </ul>
-          <Button primary>
-            Смотреть каталог <Arrow />
-          </Button>
+          <Link href="/asper">
+            <Button primary>
+              Смотреть каталог <Arrow/>
+            </Button>
+          </Link>
         </article>
         <article>
           <h3>
             Имплантационная система <span>UNIDENT</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarCE} alt="Имплантационная система UNIDENT" />
+            <Image src={categoryCarCE} alt="Имплантационная система UNIDENT"/>
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>от 6 500 грн</span>
+              <Image src={price} alt="Иконка цены"/>
+              <span className={styles.heading}>от 6 500 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка гарантии" />
+              <Image src={theory} alt="Иконка гарантии"/>
               <span className={styles.heading}>Гарантия</span>
               <span>- 3 года</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка качества" />
+              <Image src={practice} alt="Иконка качества"/>
               <span className={styles.heading}>Швейцарское</span>
               <span> качество</span>
             </li>
           </ul>
-          <Button primary>
-            Смотреть каталог <Arrow />
-          </Button>
+          <Link href="/unident">
+            <Button primary>
+              Смотреть каталог <Arrow/>
+            </Button>
+          </Link>
         </article>
         <article>
           <h3>
             Витаминный комплекс <span>ТМ Bauer`s</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s" />
+            <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s"/>
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="Иконка цены"/>
               <span className={styles.heading}>2 000 грн</span>
             </li>
           </ul>
-          <Button primary>
-            Смотреть каталог <Arrow />
-          </Button>
+          <Link href="/bauers">
+            <Button primary>
+              Смотреть каталог <Arrow/>
+            </Button>
+          </Link>
         </article>
       </div>
       <Swiper
@@ -147,27 +156,27 @@ const CategoriesSection: FC = () => {
               Имплантационная система <span>HELIX</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarB} alt="Имплантационная система HELIX" />
+              <Image src={categoryCarB} alt="Имплантационная система HELIX"/>
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="Иконка цены"/>
                 <span className={styles.heading}>от 7 000 грн/шт</span>
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии" />
+                <Image src={theory} alt="Иконка гарантии"/>
                 <span className={styles.heading}>Гарантия</span>
                 <span>- 3 года</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка качества" />
+                <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Немецкое</span>
                 <span> качество</span>
               </li>
             </ul>
             <Button primary>
-              Смотреть каталог <Arrow />
+              Смотреть каталог <Arrow/>
             </Button>
           </article>
         </SwiperSlide>
@@ -177,27 +186,27 @@ const CategoriesSection: FC = () => {
               Имплантационная система <span>ASPER</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarC} alt="Имплантационная система ASPER" />
+              <Image src={categoryCarC} alt="Имплантационная система ASPER"/>
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="Иконка цены"/>
                 <span className={styles.heading}>от 7 500 грн/шт</span>
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии" />
+                <Image src={theory} alt="Иконка гарантии"/>
                 <span className={styles.heading}>Гарантия</span>
                 <span>- 3 года</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка качества" />
+                <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Корейское</span>
                 <span> качество</span>
               </li>
             </ul>
             <Button primary>
-              Смотреть каталог <Arrow />
+              Смотреть каталог <Arrow/>
             </Button>
           </article>
         </SwiperSlide>
@@ -207,27 +216,27 @@ const CategoriesSection: FC = () => {
               Имплантационная система <span>UNIDENT</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarCE} alt="Имплантационная система UNIDENT" />
+              <Image src={categoryCarCE} alt="Имплантационная система UNIDENT"/>
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="Иконка цены"/>
                 <span className={styles.heading}>от 6 500 грн</span>
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии" />
+                <Image src={theory} alt="Иконка гарантии"/>
                 <span className={styles.heading}>Гарантия</span>
                 <span>- 3 года</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка качества" />
+                <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Швейцарское</span>
                 <span> качество</span>
               </li>
             </ul>
             <Button primary>
-              Смотреть каталог <Arrow />
+              Смотреть каталог <Arrow/>
             </Button>
           </article>
         </SwiperSlide>
@@ -237,16 +246,16 @@ const CategoriesSection: FC = () => {
               Витаминный комплекс <span>ТМ Bauer`s</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s" />
+              <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s"/>
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="Иконка цены"/>
                 <span className={styles.heading}>2 000 грн</span>
               </li>
             </ul>
             <Button primary>
-              Смотреть каталог <Arrow />
+              Смотреть каталог <Arrow/>
             </Button>
           </article>
         </SwiperSlide>

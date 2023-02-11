@@ -1,12 +1,34 @@
 import React, { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
 import styles from "@/components/pages/Categories.module.scss";
-import QuestionsSection from "@/components/pages/Home/QuestionsSection/QuestionsSection";
+import helix from "@/components/pages/Helix/helix-implant.png";
+
+import Button from "@/components/ui/Button/Button";
+import Arrow from "@/components/other/Icons/Arrow";
 
 const Helix: FC = () => {
   return (
-    <main className={styles.main}>
-      <QuestionsSection />
-    </main>
+    <article className={styles.implantArticle}>
+      <div><Image src={helix} alt="Импланты Helix"/></div>
+      <div>
+        <h1>Имплантационная система HELIX</h1>
+        <div className={styles.info}>
+          <p>Консультация <span>Бесплатно</span></p>
+          <p>Удаление зуба <span>600 грн.</span></p>
+          <p>Имплант + установка <span>7 000 грн.</span></p>
+          <p>Формирователь десны <span>800 грн.</span></p>
+          <p>Абатмент <span>2 000 грн.</span></p>
+          <p>Металокерамическая коронка <span>2 500 грн.</span></p>
+        </div>
+        <Link href="/#form" scroll={true}>
+          <Button primary>
+            Заказать установку импланта <Arrow/>
+          </Button>
+        </Link>
+      </div>
+    </article>
   );
 };
 

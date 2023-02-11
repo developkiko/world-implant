@@ -9,6 +9,12 @@
     article {
       @apply bg-white flex flex-col justify-between gap-3 rounded-md p-4;
 
+      a {
+        display: flex;
+        button {
+          width: 100%;
+        }
+      }
       h3 {
         @apply text-3xl font-black;
 
