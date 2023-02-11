@@ -1,4 +1,4 @@
-const TOKEN = "5438803182:AAH1x-P2VW0Z9HTFoIrhqzf_lGms51ZzQtQ";
+const TOKEN = procrss.env.TG_BOT_TOKEN;
 const CHAT_ID = -1001394974009;
 
 const FormHandler = async (data: string) => {
