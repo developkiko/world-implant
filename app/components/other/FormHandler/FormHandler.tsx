@@ -1,5 +1,6 @@
 const TOKEN = process.env.NEXT_PUBLIC_TG_BOT_TOKEN;
 const CHAT_ID = -1001394974009;
+//const CHAT_ID = 5438803182;
 
 const FormHandler = async (data: string) => {
   const response = await fetch(
