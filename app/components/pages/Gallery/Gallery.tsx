@@ -1,7 +1,17 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import PhotoAlbum from "react-photo-album";
+import Lightbox from "yet-another-react-lightbox";
 
 import styles from "./Gallery.module.scss";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Heading from "@/components/ui/Heading/Heading";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
 //import {images as IMAGES} from "./images/";
 //add lightbox from here: https://codesandbox.io/s/long-star-sw28e2
 
@@ -41,10 +51,19 @@ const photos = [
 ];
 
 const PhotoGallery: FC = () => {
+  const [index, setIndex] = useState(-1);
   return (
     <main className={styles.main}>
-      <h1>Наша фото-галерея</h1>
-      <PhotoAlbum layout="rows" photos={photos} />
+      <Heading>Наша фото-галерея</Heading>
+      <PhotoAlbum layout="rows" photos={photos} onClick={({ index }) => setIndex(index)} />
+      <Lightbox
+        slides={photos}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        // enable optional lightbox plugins
+        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+      />
     </main>
   );
 };

@@ -21,6 +21,9 @@ const Footer: FC = () => {
             </Link>
           </li>
           <li>
+            <Link href="/gallery">Галерея</Link>
+          </li>
+          <li>
             <Link href="/contacts">Контакты</Link>
           </li>
         </ul>
