@@ -11,11 +11,19 @@
     <li><a href="https://github.com/nolimits4web/swiper" target="_blank">Swiper</a></li>
 </ul>
 
-<h2 align="center">Запуск репозитория</h2>
+<h2 align="center">Push на Heroku</h2>
 
 ```bash
 heroku git:remote -a world-implant
 
 git add .
 git commit -am "make it better"
+git push heroku main
+```
+
+<h2 align="center">Push на GitHubu</h2>
+
+```bash
+git remote add origin https://github.com/developkiko/world-implant.git
+git push -u origin main
 ```
