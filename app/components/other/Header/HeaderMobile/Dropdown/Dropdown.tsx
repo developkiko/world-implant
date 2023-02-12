@@ -13,10 +13,9 @@ import { createFocusTrap } from "focus-trap";
 interface Props {
   isDropdown: boolean;
   setIsDropdown: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
+const Dropdown: FC<Props> = ({ isDropdown, setIsDropdown }) => {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -71,6 +70,9 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
               >
                 Задать вопрос
               </Link>
+            </li>
+            <li>
+              <Link href="/gallery">Галерея</Link>
             </li>
             <li>
               <Link href="/contacts">Контакты</Link>

@@ -12,11 +12,7 @@ const Dropdown = dynamic(
   }
 );
 
-interface Props {
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HeaderMobile: FC<Props> = ({ setIsModalShow }) => {
+const HeaderMobile: FC = () => {
   const [isDropdown, setIsDropdown] = useState<boolean>(false);
 
   return (
@@ -26,7 +22,6 @@ const HeaderMobile: FC<Props> = ({ setIsModalShow }) => {
         <Burger />
       </button>
       <Dropdown
-        setIsModalShow={setIsModalShow}
         isDropdown={isDropdown}
         setIsDropdown={setIsDropdown}
       />

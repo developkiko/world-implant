@@ -6,11 +6,7 @@ import Logo from "@/components/ui/Logo/Logo";
 import Link from "next/link";
 import Button from "@/components/ui/Button/Button";
 
-interface Props {
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HeaderDesktop: FC<Props> = () => {
+const HeaderDesktop: FC = () => {
   return (
     <header className={styles.desktop}>
       <div className={styles.about}>
@@ -26,6 +22,9 @@ const HeaderDesktop: FC<Props> = () => {
               <Link href="/#form" scroll={false}>
                 Задать вопрос
               </Link>
+            </li>
+            <li>
+              <Link href="/gallery">Галерея</Link>
             </li>
             <li>
               <Link href="/contacts">Контакты</Link>

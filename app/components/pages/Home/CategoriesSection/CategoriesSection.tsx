@@ -16,7 +16,6 @@ import categoryCarCE from "/public/images/category_car_ce.jpg";
 import categoryCarD from "/public/images/category_car_d.jpg";
 
 import price from "/public/images/price.png";
-import theory from "/public/images/theory.png";
 import practice from "/public/images/practice.png";
 
 const CategoriesSection: FC = () => {
@@ -28,7 +27,7 @@ const CategoriesSection: FC = () => {
       className={styles.section}
       id="categories"
     >
-      <Heading>Наша продукция</Heading>
+      <Heading>Каталог цен на услуги и продукцию</Heading>
       <div className={styles.categories}>
         <article>
           <h3>
@@ -42,11 +41,6 @@ const CategoriesSection: FC = () => {
               <Image src={price} alt="Иконка цены"/>
               <span className={styles.heading}>от 7 000 грн/шт</span>
               <span>с учётом установки</span>
-            </li>
-            <li>
-              <Image src={theory} alt="Иконка гарантии"/>
-              <span className={styles.heading}>Гарантия</span>
-              <span>- 3 года</span>
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
@@ -74,11 +68,6 @@ const CategoriesSection: FC = () => {
               <span>с учётом установки</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка гарантии"/>
-              <span className={styles.heading}>Гарантия</span>
-              <span>- 3 года</span>
-            </li>
-            <li>
               <Image src={practice} alt="Иконка качества"/>
               <span className={styles.heading}>Корейское</span>
               <span> качество</span>
@@ -102,11 +91,6 @@ const CategoriesSection: FC = () => {
               <Image src={price} alt="Иконка цены"/>
               <span className={styles.heading}>от 6 500 грн/шт</span>
               <span>с учётом установки</span>
-            </li>
-            <li>
-              <Image src={theory} alt="Иконка гарантии"/>
-              <span className={styles.heading}>Гарантия</span>
-              <span>- 3 года</span>
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
@@ -165,19 +149,16 @@ const CategoriesSection: FC = () => {
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии"/>
-                <span className={styles.heading}>Гарантия</span>
-                <span>- 3 года</span>
-              </li>
-              <li>
                 <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Немецкое</span>
                 <span> качество</span>
               </li>
             </ul>
-            <Button primary>
-              Смотреть каталог <Arrow/>
-            </Button>
+            <Link href="/helix">
+              <Button primary>
+                Смотреть каталог <Arrow/>
+              </Button>
+            </Link>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
@@ -195,19 +176,16 @@ const CategoriesSection: FC = () => {
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии"/>
-                <span className={styles.heading}>Гарантия</span>
-                <span>- 3 года</span>
-              </li>
-              <li>
                 <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Корейское</span>
                 <span> качество</span>
               </li>
             </ul>
-            <Button primary>
-              Смотреть каталог <Arrow/>
-            </Button>
+            <Link href="/asper">
+              <Button primary>
+                Смотреть каталог <Arrow/>
+              </Button>
+            </Link>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
@@ -225,19 +203,16 @@ const CategoriesSection: FC = () => {
                 <span>с учётом установки</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка гарантии"/>
-                <span className={styles.heading}>Гарантия</span>
-                <span>- 3 года</span>
-              </li>
-              <li>
                 <Image src={practice} alt="Иконка качества"/>
                 <span className={styles.heading}>Швейцарское</span>
                 <span> качество</span>
               </li>
             </ul>
-            <Button primary>
-              Смотреть каталог <Arrow/>
-            </Button>
+            <Link href="/unident">
+              <Button primary>
+                Смотреть каталог <Arrow/>
+              </Button>
+            </Link>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
@@ -254,9 +229,11 @@ const CategoriesSection: FC = () => {
                 <span className={styles.heading}>2 000 грн</span>
               </li>
             </ul>
-            <Button primary>
-              Смотреть каталог <Arrow/>
-            </Button>
+            <Link href="/bauers">
+              <Button primary>
+                Смотреть каталог <Arrow/>
+              </Button>
+            </Link>
           </article>
         </SwiperSlide>
       </Swiper>
