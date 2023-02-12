@@ -8,7 +8,7 @@ const GalleryPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Driving School - Наша фото-галерея</title>
+        <title>World-Implant - Наша фото-галерея</title>
       </Head>
       <PhotoGallery />
     </Layout>

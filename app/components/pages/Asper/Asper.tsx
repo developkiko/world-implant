@@ -16,11 +16,11 @@ const Asper: FC = () => {
         <h1>Имплантационная система ASPER</h1>
         <div className={styles.info}>
           <p>Консультация <span>Бесплатно</span></p>
-          <p>Удаление зуба <span>600 грн.</span></p>
+          <p>Удаление зуба (если нужно) <span>600 грн.</span></p>
           <p>Имплант + установка <span>7 000 грн.</span></p>
           <p>Формирователь десны <span>800 грн.</span></p>
           <p>Абатмент <span>2 000 грн.</span></p>
-          <p>Металокерамическая коронка <span>2 500 грн.</span></p>
+          <p>Металлокерамическая коронка <span>2 500 грн.</span></p>
         </div>
         <Link href="/#form" scroll={true}>
           <Button primary>
