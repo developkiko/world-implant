@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 import Arrow from "@/components/other/Icons/Arrow";
 
 import Image from "next/image";
-import { Autoplay } from "swiper";
 import Link from "next/link";
+import { Autoplay } from "swiper";
 
 import car from "/public/images/car.png";
 import chart from "/public/images/chart.png";
@@ -28,9 +28,10 @@ const PrimarySection: FC = () => {
       className={styles.section}
     >
       <article className={styles.majorArticle}>
+        <span>Работает программа World-Implant Ukraine</span>
         <h1>Продажа и установка зубных имплантов в Днепре</h1>
         <p>
-          Ищете надежный способ восстановления зубов? Мы предлагаем высококачественные зубные импланты и профессиональную установку в Днепре. Обратитесь к нам сейчас и восстановите улыбку навсегда.
+          Мы предлагаем высококачественные зубные импланты и профессиональную установку в Днепре. Обратитесь к нам сейчас и восстановите улыбку навсегда.
         </p>
         <Link href="/#form" scroll={true}>
           <Button primary>

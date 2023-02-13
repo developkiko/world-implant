@@ -6,6 +6,11 @@
     background: url("main-bg.png") center right no-repeat;
     background-size: cover;
 
+    > span {
+      color: #33bbff;
+      font-weight: bold;
+    }
+
     h1 {
       @apply text-6xl font-black uppercase w-3/4;
     }
