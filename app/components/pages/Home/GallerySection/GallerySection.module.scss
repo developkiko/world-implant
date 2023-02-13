@@ -4,7 +4,7 @@
   @apply px-10 py-20 flex mx-0;
 
   margin-top: 1rem !important;
-  min-height: 300px;
+  min-height: 200px;
   justify-content: space-between;
   align-items: center;
   background-image: url("gallery-bg.png");
@@ -67,7 +67,7 @@
       }
     }
     a {
-      @apply w-full;
+      @apply w-1/2;
     }
   }
 }

@@ -9,17 +9,14 @@ import Heading from "@/components/ui/Heading/Heading";
 
 const GallerySection: FC = () => {
   return (
-    <>
-    <Heading>Наша фото-галерея</Heading>
     <section className={styles.GalleryMain}>
-      <h3>Вы можете посмотреть примеры продукции и работы специалистов программы <span>World-Implant Ukraine</span></h3>
+      <h3>Фото-галерея <span>World-Implant</span></h3>
       <Link href="/gallery">
         <Button primary>
-          Смотреть галерею <Arrow />
+          Смотреть фото-галерею <Arrow />
         </Button>
       </Link>
     </section>
-    </>
   );
 }
 

@@ -58,7 +58,9 @@ const ContactsSection: FC = () => {
           </p>
         </div>
         <div className={forms.modal}>
-          {isShowing ? <div>Ваше заявка успешно отправлена! Ожидайте, наш менеджер свяжеться с вами в ближайшее время.</div> : <span>Возникла проблема при отправке формы, возможно Вам стоит попробовать еще раз позже!</span>}
+          {isShowing ?
+            <div>Ваше заявка успешно отправлена! Ожидайте, наш менеджер свяжеться с вами в ближайшее время.</div> :
+            <span>Возникла проблема при отправке формы, возможно Вам стоит попробовать еще раз позже!</span>}
         </div>
         <form onSubmit={handleSubmit}>
           <div>
@@ -94,37 +96,33 @@ const ContactsSection: FC = () => {
             <Phone/> <h6>Позвони сейчас</h6>
           </span>
             <span>
-            <a href="tel:+380683656767">+38 (068) 365-67-67</a>
-          </span>
+              <a href="tel:+380683656767">+38 (068) 365-67-67</a>
+            </span>
             <span>
-            <a href="tel:+380679241202">+38 (067) 924-12-02</a>
-          </span>
+              <a href="tel:+380630561002">+38 (063) 056-10-02</a>
+            </span>
           </li>
           <li>
-          <span>
-            <Mail/> <h6>Email</h6>
-          </span>
             <span>
-            <a href="mailto:support@world-implant.com">support@world-implant.com</a>
-          </span>
+              <Mail/> <h6>Email</h6>
+            </span>
             <span>
-            <a href="mailto:info@world-implant.com">info@world-implant.com</a>
-          </span>
+              <a href="mailto:support@world-implant.com">support@world-implant.com</a>
+            </span>
           </li>
           <li>
-          <span>
-            <Geo/> <h6>Местоположение</h6>
-          </span>
             <span>
-            <a
-              href="https://goo.gl/maps/GVGZFpp3x5Z9UBXR7"
-              rel="noreferrer"
-              target="_blank"
-            >
-              ул. Князя Ярослава Мудрого (Ленинградская), 68, Днепр, Днепропетровская область, 49000
-              ТДВ "КОНЦЕРН "ВЕСНА", 3 этаж, офис 317
-            </a>
-          </span>
+              <Geo/> <h6>Местоположение</h6>
+            </span>
+            <span>
+              <a
+                href="https://goo.gl/maps/GVGZFpp3x5Z9UBXR7"
+                rel="noreferrer"
+                target="_blank"
+              >
+                ул. Князя Ярослава Мудрого (Ленинградская), 68, Днепр, Днепропетровская область
+              </a>
+            </span>
           </li>
         </ul>
       </div>
