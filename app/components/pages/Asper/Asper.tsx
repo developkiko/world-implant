@@ -20,7 +20,7 @@ const Asper: FC = () => {
           <p>Имплант + установка <span>7 000 грн.</span></p>
           <p>Формирователь десны <span>800 грн.</span></p>
           <p>Абатмент <span>2 000 грн.</span></p>
-          <p>Металлокерамическая коронка <span>2 500 грн.</span></p>
+          <p>Циркониевая коронка <span>2 500 грн.</span></p>
         </div>
         <Link href="/#form" scroll={true}>
           <Button primary>

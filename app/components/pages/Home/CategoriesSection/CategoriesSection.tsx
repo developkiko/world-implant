@@ -44,7 +44,7 @@ const CategoriesSection: FC = () => {
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
-              <span className={styles.heading}>Немецкое</span>
+              <span className={styles.heading}>Корейское</span>
               <span> качество</span>
             </li>
           </ul>
@@ -69,7 +69,7 @@ const CategoriesSection: FC = () => {
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
-              <span className={styles.heading}>Корейское</span>
+              <span className={styles.heading}>Швейцарское</span>
               <span> качество</span>
             </li>
           </ul>
@@ -94,7 +94,7 @@ const CategoriesSection: FC = () => {
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
-              <span className={styles.heading}>Швейцарское</span>
+              <span className={styles.heading}>Израильское</span>
               <span> качество</span>
             </li>
           </ul>
@@ -150,7 +150,7 @@ const CategoriesSection: FC = () => {
               </li>
               <li>
                 <Image src={practice} alt="Иконка качества"/>
-                <span className={styles.heading}>Немецкое</span>
+                <span className={styles.heading}>Корейское</span>
                 <span> качество</span>
               </li>
             </ul>
@@ -177,7 +177,7 @@ const CategoriesSection: FC = () => {
               </li>
               <li>
                 <Image src={practice} alt="Иконка качества"/>
-                <span className={styles.heading}>Корейское</span>
+                <span className={styles.heading}>Швейцарское</span>
                 <span> качество</span>
               </li>
             </ul>
@@ -204,7 +204,7 @@ const CategoriesSection: FC = () => {
               </li>
               <li>
                 <Image src={practice} alt="Иконка качества"/>
-                <span className={styles.heading}>Швейцарское</span>
+                <span className={styles.heading}>Израильское</span>
                 <span> качество</span>
               </li>
             </ul>
