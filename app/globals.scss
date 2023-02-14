@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *:not(input), *:focus:not(input) {
+* {
   user-select: none;
 }
 
@@ -22,6 +22,10 @@ html,
 body,
 #__next {
   @apply h-full;
+}
+
+input, input:focus {
+  user-select: auto;
 }
 
 input:-webkit-autofill {

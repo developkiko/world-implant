@@ -57,7 +57,7 @@ const FormSection: FC = () => {
       <div className={forms.modal}>
         {isShowing ? <div>Ваше заявка успешно отправлена! Ожидайте, наш менеджер свяжеться с вами в ближайшее время.</div> : <span>Возникла проблема при отправке формы, возможно Вам стоит попробовать еще раз позже!</span>}
       </div>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} autoComplete="on">
         <div className={styles.inputs}>
           <Input
             required

@@ -32,6 +32,7 @@ const Input: FC<Props> = ({
         })}
         type={type}
         name={name}
+        autoComplete={name}
         value={value}
         required={required}
         onChange={event}

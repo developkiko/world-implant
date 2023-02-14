@@ -62,7 +62,7 @@ const ContactsSection: FC = () => {
             <div>Ваше заявка успешно отправлена! Ожидайте, наш менеджер свяжеться с вами в ближайшее время.</div> :
             <span>Возникла проблема при отправке формы, возможно Вам стоит попробовать еще раз позже!</span>}
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} autoComplete="on">
           <div>
             <Input
               title="Имя"
