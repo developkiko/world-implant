@@ -24,6 +24,6 @@ git push heroku main
 <h2 align="center">Push на GitHubu</h2>
 
 ```bash
-git remote add origin https://github.com/developkiko/world-implant.git
-git push -u origin main
+git remote add github https://developkiko@github.com/developkiko/world-implant.git
+git push --mirror github
 ```
