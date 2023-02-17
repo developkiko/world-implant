@@ -20,6 +20,11 @@
     @apply w-1/2;
   }
 
+  .adding {
+    display: block;
+    color:#777;
+    font-weight: lighter !important;
+  }
   h1 {
     @apply text-4xl font-black uppercase w-2/3 text-center;
   }
@@ -41,6 +46,7 @@
       @apply w-2/3 relative flex;
       margin: 1rem 0;
       justify-content: space-between;
+      align-items: center;
       span {
         font-weight: bold;
       }

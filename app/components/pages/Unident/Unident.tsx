@@ -16,15 +16,16 @@ const Unident: FC = () => {
         <h1>Имплантационная система UNIDENT</h1>
         <div className={styles.info}>
           <p>Консультация <span>Бесплатно</span></p>
-          <p>Удаление зуба (если нужно) <span>600 грн.</span></p>
-          <p>Имплант + установка <span>7 000 грн.</span></p>
-          <p>Формирователь десны <span>800 грн.</span></p>
-          <p>Абатмент <span>2 000 грн.</span></p>
-          <p>Циркониевая коронка <span>2 500 грн.</span></p>
+          <p><div>Удаление зуба<span className={styles.adding}>(если нужно)</span></div> <span>600 грн.</span></p>
+          <p><div>Имплант<span className={styles.adding}>+ установка</span></div> <span>7 000 грн.</span></p>
+          <p><div>Формирователь десны<span className={styles.adding}>+ установка</span></div> <span>1 000 грн.</span></p>
+          <p><div>Абатмент<span className={styles.adding}>+ установка</span></div> <span>2 800 грн.</span></p>
+          <p><div>Циркониевая коронка<span className={styles.adding}>+ установка</span></div> <span>3 500 грн.</span></p>
+          <p>Установка под ключ <span>14 300 грн.</span></p>
         </div>
         <Link href="/#form" scroll={true}>
           <Button primary>
-            Заказать установку импланта <Arrow/>
+            Заказать консультацию <Arrow/>
           </Button>
         </Link>
       </div>
