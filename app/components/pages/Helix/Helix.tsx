@@ -21,11 +21,11 @@ const Helix: FC = () => {
           <p><div>Формирователь десны <span className={styles.adding}>+ установка</span></div> <span>1 000 грн.</span></p>
           <p><div>Абатмент <span className={styles.adding}>+ установка</span></div> <span>2 500 грн.</span></p>
           <p><div>Циркониевая коронка <span className={styles.adding}>+ установка</span></div> <span>3 500 грн.</span></p>
-          <p>Установка под ключ <span>12 500 грн.</span></p>
+          <p>Итого <span>12 500 грн.</span></p>
         </div>
         <Link href="/#form" scroll={true}>
           <Button primary>
-            Заказать консультацию <Arrow/>
+            Записаться <Arrow/>
           </Button>
         </Link>
       </div>

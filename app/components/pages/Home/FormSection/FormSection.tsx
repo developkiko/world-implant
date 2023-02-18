@@ -178,7 +178,7 @@ const FormSection: FC = () => {
           </div>
         </div>
         <button className={styles.submit}>
-          Записаться <LongArrow />
+          Отправить <LongArrow />
         </button>
       </form>
     </motion.section>

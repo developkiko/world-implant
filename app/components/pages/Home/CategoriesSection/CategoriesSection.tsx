@@ -27,7 +27,7 @@ const CategoriesSection: FC = () => {
       className={styles.section}
       id="categories"
     >
-      <Heading>Каталог цен на услуги и продукцию</Heading>
+      <Heading>Каталог цен на услуги. Благодаря последним технологиям покрытия импланта, приживаемость 99%</Heading>
       <div className={styles.categories}>
         <article>
           <h3>
@@ -39,7 +39,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены"/>
-              <span className={styles.heading}>от 7 000 грн/шт</span>
+              <span className={styles.heading}>от 12 500 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
@@ -64,7 +64,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены"/>
-              <span className={styles.heading}>от 7 500 грн/шт</span>
+              <span className={styles.heading}>от 13 700 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
@@ -89,7 +89,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены"/>
-              <span className={styles.heading}>от 6 500 грн/шт</span>
+              <span className={styles.heading}>от 14 300 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
@@ -145,7 +145,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены"/>
-                <span className={styles.heading}>от 7 000 грн/шт</span>
+                <span className={styles.heading}>от 12 500 грн/шт</span>
                 <span>с учётом установки</span>
               </li>
               <li>
@@ -172,7 +172,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены"/>
-                <span className={styles.heading}>от 7 500 грн/шт</span>
+                <span className={styles.heading}>от 13 700 грн/шт</span>
                 <span>с учётом установки</span>
               </li>
               <li>
@@ -199,7 +199,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены"/>
-                <span className={styles.heading}>от 6 500 грн</span>
+                <span className={styles.heading}>от 14 300 грн</span>
                 <span>с учётом установки</span>
               </li>
               <li>
