@@ -9,4 +9,4 @@ deploy:
     scripts:
         - dpl --provider=heroku --app=$HEROKU_APP_NAME --api=HEROKU_API_KEY
     only:
-        - master
+        - main
