@@ -21,9 +21,11 @@ git commit -am "make it better"
 git push heroku main
 ```
 
-<h2 align="center">Push на GitHubu</h2>
+<h2 align="center">Push на GitHub</h2>
 
 ```bash
 git remote add github https://developkiko@github.com/developkiko/world-implant.git
 git push --mirror github
+
+git remote add source http://185.25.118.198/develop.kiko/world-implant
 ```
