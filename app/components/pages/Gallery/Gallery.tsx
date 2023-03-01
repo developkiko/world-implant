@@ -47,7 +47,14 @@ const photos = [
   { src: "/gallery/glr-item29.jpg", width: 960, height: 1280 },
   { src: "/gallery/glr-item30.jpg", width: 960, height: 1280 },
   { src: "/gallery/glr-item31.jpg", width: 1280, height: 960 },
-  { src: "/gallery/glr-item32.jpg", width: 960, height: 1280 }
+  { src: "/gallery/glr-item32.jpg", width: 960, height: 1280 },
+  { src: "/gallery/glr-item33.jpg", width: 854, height: 740 },
+  { src: "/gallery/glr-item34.jpg", width: 854, height: 740 },
+  { src: "/gallery/glr-item35.jpg", width: 854, height: 740 },
+  { src: "/gallery/glr-item36.jpg", width: 740, height: 854 },
+  { src: "/gallery/glr-item37.jpg", width: 854, height: 740 },
+  { src: "/gallery/glr-item38.jpg", width: 854, height: 740 },
+  { src: "/gallery/glr-item39.jpg", width: 854, height: 740 }
 ];
 
 const PhotoGallery: FC = () => {
