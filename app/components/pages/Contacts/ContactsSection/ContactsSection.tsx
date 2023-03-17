@@ -107,7 +107,7 @@ const ContactsSection: FC = () => {
               <Mail/> <h6>Email</h6>
             </span>
             <span>
-              <a href="mailto:support@world-implant.com">support@world-implant.com</a>
+              <a href="mailto:world.implant.ukraine@gmail.com">world.implant.ukraine@gmail.com</a>
             </span>
           </li>
           <li>
