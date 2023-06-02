@@ -14,6 +14,7 @@ import categoryCarB from "/public/images/category_car_b.jpg";
 import categoryCarC from "/public/images/category_car_c.jpg";
 import categoryCarCE from "/public/images/category_car_ce.jpg";
 import categoryCarD from "/public/images/category_car_d.jpg";
+import categoryCarE from "/public/images/category_car_e.jpg";
 
 import price from "/public/images/price.png";
 import practice from "/public/images/practice.png";
@@ -106,18 +107,24 @@ const CategoriesSection: FC = () => {
         </article>
         <article>
           <h3>
-            Витаминный комплекс <span>ТМ Bauer`s</span>
+            Имплантационная система <span>VITAPLANT</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s"/>
+            <Image src={categoryCarE} alt="Имплантационная система VITAPLANT"/>
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены"/>
-              <span className={styles.heading}>2 000 грн</span>
+              <span className={styles.heading}>7 000 грн/шт</span>
+              <span>с учётом установки</span>
+            </li>
+            <li>
+              <Image src={practice} alt="Иконка качества"/>
+              <span className={styles.heading}>Украинское качество</span>
+              <span> качество</span>
             </li>
           </ul>
-          <Link href="/bauers">
+          <Link href="/vitaplant">
             <Button primary>
               Смотреть каталог <Arrow/>
             </Button>
