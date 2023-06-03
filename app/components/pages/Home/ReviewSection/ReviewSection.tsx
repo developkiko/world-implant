@@ -6,6 +6,10 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import {Autoplay} from "swiper";
 import {motion} from "framer-motion";
+import one from "/public/images/chart.png"
+import two from "/public/images/fleet.png"
+import three from "/public/images/instructor.png"
+import four from "/public/images/discount.png"
 
 const ReviewSection: FC = () => {
   return (
