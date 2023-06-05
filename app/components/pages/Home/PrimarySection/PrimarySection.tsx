@@ -28,6 +28,8 @@ const PrimarySection: FC = () => {
       className={styles.section}
     >
       <article className={styles.majorArticle}>
+        <h3>Стоматология, диагностика и лечение.</h3>
+        <h4>Установка зубных имплантов. Одноэтапные и двухэтапные. Циркониевые зубные коронки.</h4>
         <span>Работает программа World-Implant Ukraine</span>
         <h1>Установка зубных имплантов и циркониевой коронки в Днепре</h1>
         <p>

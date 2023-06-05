@@ -120,7 +120,7 @@ const CategoriesSection: FC = () => {
             </li>
             <li>
               <Image src={practice} alt="Иконка качества"/>
-              <span className={styles.heading}>Украинское качество</span>
+              <span className={styles.heading}>Украинское</span>
               <span> качество</span>
             </li>
           </ul>
@@ -225,18 +225,18 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Витаминный комплекс <span>ТМ Bauer`s</span>
+              Имплантационная система <span>VITAPLANT</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarD} alt="Витаминный комплекс ТМ Bauer`s"/>
+              <Image src={categoryCarE} alt="Имплантационная система VITAPLANT"/>
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены"/>
-                <span className={styles.heading}>2 000 грн</span>
+                <span className={styles.heading}>7 000 грн</span>
               </li>
             </ul>
-            <Link href="/bauers">
+            <Link href="/vitaplant">
               <Button primary>
                 Смотреть каталог <Arrow/>
               </Button>

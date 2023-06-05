@@ -116,11 +116,11 @@ const ContactsSection: FC = () => {
             </span>
             <span>
               <a
-                href="https://goo.gl/maps/GVGZFpp3x5Z9UBXR7"
+                href="https://goo.gl/maps/ELHhAtcnoyYDqsTUA"
                 rel="noreferrer"
                 target="_blank"
               >
-                ул. Князя Ярослава Мудрого (Ленинградская), 68, Днепр, Днепропетровская область
+                Запорожское шоссе 74, г. Днепр
               </a>
             </span>
           </li>
