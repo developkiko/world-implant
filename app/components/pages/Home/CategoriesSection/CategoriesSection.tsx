@@ -115,7 +115,7 @@ const CategoriesSection: FC = () => {
           <ul>
             <li>
               <Image src={price} alt="Иконка цены"/>
-              <span className={styles.heading}>7 000 грн/шт</span>
+              <span className={styles.heading}>6 000 грн/шт</span>
               <span>с учётом установки</span>
             </li>
             <li>
@@ -233,7 +233,7 @@ const CategoriesSection: FC = () => {
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены"/>
-                <span className={styles.heading}>7 000 грн</span>
+                <span className={styles.heading}>6 000 грн</span>
               </li>
             </ul>
             <Link href="/vitaplant">

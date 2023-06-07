@@ -16,12 +16,10 @@ const Vitaplant: FC = () => {
         <h1>Имплантационная система Vitaplant</h1>
         <div className={styles.info}>
           <p>Консультация <span>Бесплатно</span></p>
-          <p><div>Удаление зуба<span className={styles.adding}>(если нужно)</span></div> <span>650 грн.</span></p>
-          <p><div>Имплант<span className={styles.adding}>+ установка</span></div> <span>6 500 грн.</span></p>
-          <p><div>Формирователь десны<span className={styles.adding}>+ установка</span></div> <span>1 000 грн.</span></p>
-          <p><div>Абатмент<span className={styles.adding}>+ установка</span></div> <span>2 700 грн.</span></p>
-          <p><div>Циркониевая коронка<span className={styles.adding}>+ установка</span></div> <span>3 500 грн.</span></p>
-          <p>Итого <span>13 700 грн.</span></p>
+          <p><div>Удаление зуба<span className={styles.adding}>(если нужно)</span></div> <span>---</span></p>
+          <p><div>Имплант<span className={styles.adding}>+ установка</span></div> <span>6 000 грн.</span></p>
+          <p><div>Циркониевая коронка<span className={styles.adding}>+ установка</span></div> <span>6 500 грн.</span></p>
+          <p>Итого <span>12 500 грн.</span></p>
         </div>
         <Link href="/#form" scroll={true}>
           <Button primary>
